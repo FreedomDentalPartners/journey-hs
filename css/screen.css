@@ -14068,13 +14068,14 @@ body {
 
 @media (width >= 992px) {
   .section-anchor {
-    top: -64px;
+    top: -84px;
   }
 }
 
 .form-title {
   text-align: center;
   color: #fff;
+  padding-top: 5rem;
 }
 
 .hbspt-form, .hs-form {
@@ -15061,7 +15062,7 @@ body {
 }
 
 .list-column-sec .list-column--block:last-of-type {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
 }
 
 @media (width >= 992px) {
