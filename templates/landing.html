@@ -1,0 +1,29 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Restfull Theme
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ get_asset_url('../css/screen.css') }}">
+
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    {% dnd_area "main" label="Main content" locked=false %}
+    {% end_dnd_area %}
+    {{ standard_footer_includes }}
+
+
+    <script type="text/javascript" src="{{ get_asset_url('../js/index.js') }}"></script>
+    <script type="text/javascript" src="{{ get_asset_url('../js/vendor.js') }}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+[
+  {
+    "name": "theme_color",
+    "label": "Theme",
+    "type": "choice",
+    "display": "select",
+    "choices": [
+      [ "dark", "Dark" ],
+      [ "light", "Light" ]
+    ],
+    "default": "dark",
+    "required": true,
+    "multiple": false
+  },
+  {
+    "name": "header",
+    "label": "Header",
+    "type": "text",
+    "allow_new_line": true
+  },
+  {
+    "name": "subheader",
+    "label": "Subheader",
+    "type": "text",
+    "allow_new_line": true
+  },
+  {
+    "name": "blocks",
+    "label": "Blocks",
+    "type": "group",
+    "occurrence": {
+      "min": 0,
+      "max": 3,
+      "default": 0,
+      "sorting_label_field": "blocks.content"
+    },
+    "children": [
+      {
+        "name": "icon",
+        "label": "Icon Type",
+        "type": "choice",
+        "display": "select",
+        "choices": [
+          [ "checkmark", "Checkmark" ],
+          [ "x_mark", "X Mark" ]
+        ],
+        "default": "checkmark",
+        "required": true,
+        "multiple": false
+      },
+      { "name": "column_header", "label": "Column Header", "type": "text" },
+      { "name": "content", "label": "Content", "type": "richtext" }
+    ]
+  },
+  {
+    "name": "link_text",
+    "label": "Link Text",
+    "type": "text"
+  },
+  {
+    "name": "link_url",
+    "label": "Link URL",
+    "type": "link"
+  },
+  {
+    "name": "unique_id",
+    "label": "Unique ID",
+    "type": "text"
+  }
+]

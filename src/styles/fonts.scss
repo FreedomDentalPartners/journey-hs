@@ -1,0 +1,117 @@
+$outfit: "Outfit", sans-serif;
+
+// outfit
+@mixin outfit-400 {
+    font-family: $outfit;
+    font-style: normal;
+    font-weight: 400;
+}
+@mixin outfit-500 {
+    font-family: $outfit;
+    font-style: normal;
+    font-weight: 500;
+}
+@mixin outfit-600 {
+    font-family: $outfit;
+    font-style: normal;
+    font-weight: 600;
+}
+@mixin outfit-700 {
+    font-family: $outfit;
+    font-style: normal;
+    font-weight: 700;
+}
+@mixin outfit-800 {
+    font-family: $outfit;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -0.375px;
+}
+@mixin outfit-900 {
+    font-family: $outfit;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: -0.375px;
+}
+
+
+// Header Classes
+h1, .h1, h1 > p {
+    // font-size: 2.125rem;
+    font-size: clamp(2.5rem, 8vw, 2.25rem);
+    @include outfit-800();
+    @include media-breakpoint-up(md) {
+        font-size: 3.75rem;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 4.25rem;
+    }
+}
+
+h2, .h2, h2 > p {
+    @include outfit-800();
+    font-size: 2.25rem;
+    @include media-breakpoint-up(md) {
+        font-size: 3.25rem;
+    }
+}
+
+h3, .h3, h3 > p {
+    @include outfit-800();
+    font-size: 1.625rem;
+    line-height: 1.35;
+    @include media-breakpoint-up(md) {
+        font-size: 1.875rem;
+    }
+}
+
+h4, .h4, h4 > p {
+    @include outfit-600();
+    font-size: 1.375rem;
+    line-height: 1.4;
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
+}
+
+h5, .h5, h5 > p {
+    @include outfit-600();
+    font-size: 1.125rem;
+    line-height: 1.5;
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+    }
+}
+
+h6, .h6, h6 > p {
+    @include outfit-400();
+    font-size: 1rem;
+}
+
+p {
+    @include outfit-500();
+    font-size: 1.25rem;
+    // @include media-breakpoint-up(lg) {
+    //     font-size: 1.375rem;
+    // }
+}
+
+.body-2 {
+    @include outfit-600();
+    font-size: 1.1rem;
+}
+
+.display-1, .display-1 > p {
+    font-size: 3rem;
+    @include outfit-900();
+    @include media-breakpoint-up(md) {
+        font-size: 4.75rem;
+    }
+}
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-size-adjust: none;
+}

@@ -1,0 +1,223 @@
+// Hubspot Form Globals
+.form-title {
+    text-align: center;
+    color: $white;
+}
+
+.hbspt-form, .hs-form {
+    background: $dark;
+    color: $white;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    width: 85%;
+    margin: 0 auto;
+    @include media-breakpoint-up(lg) {
+        max-width: 600px;
+        padding-bottom: 7rem;
+        margin: 0 auto;
+    }
+
+    fieldset {
+        margin: 0 auto;
+    }
+
+    .hs-form-field, .wp-form-field {
+        width: 100%;
+        // max-width: 80%;
+        margin: 0 auto 3rem;
+        border: none;
+    }
+
+
+    .hs-richtext a {
+        color: $green;
+        font-weight: 700;
+    }   
+
+    label, input {
+        @include outfit-600;
+        width: 100%;
+    }
+
+    label {
+        color: $green;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        // margin-left: 0.4rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.125rem;
+        }
+    }
+
+    .multi-container {
+        li {
+            list-style: none;
+
+            label {
+                position: relative;
+
+                input {
+                    position: absolute;
+                    left: -1.7rem;
+                    top: 0.4rem;
+                    width: fit-content;
+                }
+            }
+        }
+        
+        label {
+            color: $white;
+        }    
+    } 
+
+    fieldset.form-columns-2 {
+        margin: 0 auto;
+        @include media-breakpoint-up(md) {
+            max-width: 600px;
+        }
+        @include media-breakpoint-up(lg) {
+            max-width: 700px;
+        }
+
+        input {
+            width: 95%;
+            margin: 0 auto;
+            font-size: 1.25rem;
+        }
+    }
+
+    input:not(.hs-button) {
+        padding: 0.75rem 0 0.9rem 1.4rem;
+        background: none;
+        border: 1px solid $white;
+        border-radius: 40px;
+        outline: none;
+        color: $white;
+        @include media-breakpoint-up(lg) {
+            font-size: 1.2rem;
+        }
+
+        &::placeholder {
+            color: $white;
+            opacity: 0.4;
+        }
+    }
+
+    select {
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 0.5rem;
+        background: none;
+        border: none;
+        border-bottom: 2px solid $white;
+        color: $white;
+        font-size: 1rem;
+        @include outfit-600;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 200px;
+        background: $dark;
+        @include outfit-600;
+        color: $white;
+        margin-top: 1rem;
+        padding: 0.8rem;
+        font-size: 1.125rem;
+        border: 1px solid $white;
+        @include media-breakpoint-up(lg) {
+            font-size: 1.375rem;
+        }
+    }
+    
+    .hs-error-msgs {
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        color: $red;
+        
+        .hs-error-msg {
+            color: $red;
+        }
+    }
+    
+    .submitted-message {
+        font-size: 1.25rem;
+        @include outfit-700;
+        color: $white;
+        text-align: center;
+    }
+    
+    .hs-button {
+        width: fit-content;
+        margin: 0.75rem auto 0;
+        min-width: 250px;
+        padding: 1rem 2.25rem;
+        font-size: 1.25rem;
+        @include outfit-700;
+        transition-duration: 0.2s;
+        border-radius: 40px;
+        line-height: 1.7;
+        color: $white;
+        background-color: $green-dark;
+        border: 2px solid $green-dark;
+        @include media-breakpoint-up(lg) {
+            margin: 1.75rem auto 0;
+            font-size: 1.25rem;
+        }
+        
+        &:hover, &:focus, &:focus-visible, &:active {
+            color: $dark;
+            background-color: $white;
+            border: 2px solid $white;
+        }
+    }
+
+    .hs-submit .actions {
+        margin: 0 auto;
+        display: flex;
+        // @include media-breakpoint-up(md) {
+        //     margin: 2rem auto 0;
+        // }
+    }
+
+    .form-columns-1 {
+        margin: 0 auto;
+        @include media-breakpoint-up(md) {
+            max-width: 600px;
+        }
+        @include media-breakpoint-up(md) {
+            max-width: 700px;
+        }
+    }
+
+    .legal-consent-container, .legal-consent-container p {
+        @include outfit-500;
+        color: $white;
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+
+
+        .inputs-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1.25rem;
+            margin-bottom: 0.75rem;
+
+            span {
+                margin-top: -7px;
+                margin-left: 1.75rem;
+                line-height: 1.3;
+                font-size: 1.3rem;
+            }
+
+            label {
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "name": "header",
+    "label": "Header",
+    "type": "text",
+    "display": "textarea"
+  },
+  {
+    "name": "subheader",
+    "label": "Subheader",
+    "type": "text",
+    "display": "textarea"
+  },
+  {
+    "name": "body_text",
+    "label": "Body",
+    "type": "richtext"
+  },
+  {
+    "name": "image",
+    "label": "Image",
+    "type": "image"
+  },
+  {
+    "name": "caption",
+    "label": "Image Caption",
+    "type": "text",
+    "display": "textarea"
+  },
+  {
+    "name": "link_text_1",
+    "label": "Link 1 Text",
+    "type": "text"
+  },
+  {
+    "name": "link_url_1",
+    "label": "Link 1 URL",
+    "type": "url"
+  },
+  {
+    "name": "link_text_2",
+    "label": "Link 2 Text",
+    "type": "text"
+  },
+  {
+    "name": "link_url_2",
+    "label": "Link 2 URL",
+    "type": "url"
+  },
+  {
+    "name": "anchor_link",
+    "label": "Anchor Link",
+    "type": "text"
+  }
+]

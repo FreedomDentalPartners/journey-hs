@@ -1,0 +1,10 @@
+/node_modules
+/wp-content/uploads/rank-math
+/.cache
+/.parcel-cache
+config.yml
+.cache
+src/.cache
+.DS_Store
+**/.DS_Store
+/sections/to-delete

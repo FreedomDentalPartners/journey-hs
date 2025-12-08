@@ -1,0 +1,40 @@
+<section class="section hero-basic-sec">
+    <div class="container hero-basic">
+        <div class="row content-wrap">
+            <div class="text-wrap">
+                <h1 class="hero-basic--header">{{ module.header }}</h1>
+                <h2 class="hero-basic--subheader">{{ module.subheader }}</h2>
+                <div class="hero-basic--body_text">{{ module.body_text }}</div>
+            </div>
+
+            {% if module.image.src != '' %}
+                <div class="image-wrap">
+                    <img 
+                        class="hero-basic--image"
+                        src="{{ module.image.src }}" 
+                        alt="{{ module.image.alt|escape }}">
+                {% endif %}
+                {% if module.caption %}
+                    <p class="hero-basic--caption">{{ module.caption }}</p>
+                </div>
+            {% endif%}
+
+            {% if module.link_text_1 %}
+            <div class="button-wrap mt-3">
+                {% if module.link_text_1 %}
+                   <a href="{{ module.link_url_1 }}" class="btn btn-primary mt-4 mt-lg-5 mx-lg-3">{{ module.link_text_1 }}</a>
+                {% endif %}
+                {% if module.link_text_2 %}
+                   <a href="{{ module.link_url_2 }}" class="btn btn-secondary mt-4 mt-lg-5 mx-lg-3">{{ module.link_text_2 }}</a>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if module.anchor_link %}
+                <a href="{{ module.anchor_link }}" class="btn btn-arrow" aria-label="Link to {{ module.anchor_link}} section" role="button">
+                    {% include "../../templates/partials/icon-arrow.html" %}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+[
+  {
+    "name": "header",
+    "label": "Header",
+    "type": "text",
+    "display": "textarea"
+  },
+  {
+    "name": "subheader",
+    "label": "Subheader",
+    "type": "text",
+    "display": "textarea"
+  },
+  {
+    "name": "body_text",
+    "label": "Body",
+    "type": "richtext"
+  }
+]

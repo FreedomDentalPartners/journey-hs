@@ -1,0 +1,132 @@
+.list-column-sec {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    @include media-breakpoint-up(lg) {
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+    }
+
+    .list-column {
+        &--header {
+            color: $green;
+            text-align: center;
+        }
+
+        &--subheader {
+            color: $white;
+            text-align: center;
+            margin-top: 1rem;
+            @include media-breakpoint-up(lg) {
+                margin-top: 2.5rem;
+            }
+        }
+
+        &--btn {
+            margin: 2rem auto 0;
+        }
+
+        &--block {
+            @include media-breakpoint-up(lg) {
+                padding-right: 2rem;
+                padding-left: 2rem;
+            }
+
+            &:last-of-type {
+                margin-top: 3.5rem;
+                @include media-breakpoint-up(lg) {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &--column_header {
+            color: $green;
+            max-width: 23ch;
+        }
+
+        &--column_content {
+            ul {
+                margin-bottom: 0;
+                padding-left: 0rem;
+                list-style: none;
+                max-width: 55ch;
+                
+                li {
+                    position: relative;
+                    padding-left: 3rem;
+                    color: $white;
+                    margin-bottom: 2rem;
+                    font-size: 1.25rem;
+                    @include outfit-600;
+                    opacity: 0;
+                    transform: translateY(30px);
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+
+                    div {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 32px;
+                        height: 32px;
+                        background: url("https://22155741.fs1.hubspotusercontent-na1.net/hubfs/22155741/icon-checkmark-green.svg");
+                    }
+                }
+            }
+        }
+
+        .x_mark {
+            .list-column--column_content {
+                div {
+                    background: url("https://22155741.fs1.hubspotusercontent-na1.net/hubfs/22155741/icon-xmark.svg");
+                }
+            }
+            .list-column--column_header {
+                color: $white;
+            }
+        }
+    }
+
+    &.light {
+        background: $white;
+
+        .list-column {
+            &--column_header {
+                color: $purple;
+            }
+
+            &--column_content {
+                ul {
+                    li {
+                        color: $dark;
+
+                        div {
+                            background: url("https://22155741.fs1.hubspotusercontent-na1.net/hubfs/22155741/icon-checkmark-green-alt.svg");
+                        }
+                    }
+                }
+            }
+
+            &--subheader {
+                color: $dark;
+            }
+        }
+
+        .x_mark {
+            .list-column {
+                &--column_header {
+                    color: $purple;
+                }
+
+                &--column_content {
+                    div {
+                        background: url("https://22155741.fs1.hubspotusercontent-na1.net/hubfs/22155741/icon-xmark.svg");
+                    }
+                }
+            }
+        }
+    }
+}

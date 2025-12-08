@@ -1,0 +1,49 @@
+.section-basic-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: $white;
+    @include media-breakpoint-up(md) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .basic-content {
+        &--header {
+            color: $purple;
+            margin-bottom: 1.375rem;
+            @include media-breakpoint-up(lg) {
+                max-width: 29ch;
+                margin-bottom: 2rem;
+            }
+        }
+        
+        &--subheader {
+            margin-bottom: 1.5rem;
+            @include media-breakpoint-up(lg) {
+                max-width: 38ch;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &--body {
+            @include media-breakpoint-up(lg) {
+                max-width: 90ch;
+            }
+            
+            p {
+                margin-bottom: 1.5rem;
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 1.75rem;
+                }
+
+                strong {
+                    color: $purple;
+                }
+            }
+        }
+    }
+}

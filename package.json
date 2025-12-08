@@ -1,0 +1,40 @@
+{
+  "name": "journey",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "browser-sync": "^3.0.2",
+    "browsersync": "0.0.1-security",
+    "parcel": "^2.13.0",
+    "sass": "^1.38.1"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^2.0.2",
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.2.3",
+    "gsap": "^3.7.1",
+    "lottie-web": "^5.13.0",
+    "npm-run-all": "^4.1.5",
+    "swiper": "^8.1.4"
+  },
+  "browserslist": [
+    "since 2017-06"
+  ],
+  "scripts": {
+    "dev": "PARCEL_MAX_CONCURRENT_CALLS=3 npm-run-all -p watch:styles watch:js watch:hs",
+    "start": "npm-run-all dev browsersync",
+    "deploy:development": "npm-run-all parcel:build:css parcel:build:js theme:deploy:development",
+    "deploy:production": "npm-run-all parcel:build:css parcel:build:js theme:deploy:production",
+    "theme:deploy:development": "theme deploy --env=development",
+    "theme:deploy:production": "theme deploy --env=production",
+    "build:css": "parcel build src/styles/styles.scss --public-url='.' --dist-dir css ",
+    "build:js": "parcel build src/scripts/index.js --dist-dir js ",
+    "watch:hs": "hs watch /Users/jason/Sites/journey-hs journey-hs",
+    "watch:styles": "parcel watch src/styles/screen.scss --public-url='.' --dist-dir css --no-hmr ",
+    "watch:js": "parcel watch src/scripts/index.js src/scripts/vendor.js --dist-dir js --no-hmr ",
+    "browsersync": "node browsersync-script.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

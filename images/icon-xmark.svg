@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Letter" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1000 1000">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #e46e6f;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #150f2c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 100px;
+      }
+    </style>
+  </defs>
+  <circle class="st0" cx="500" cy="500" r="474"/>
+  <line class="st1" x1="649.8" y1="350.2" x2="350.2" y2="649.8"/>
+  <line class="st1" x1="350.2" y1="350.2" x2="649.8" y2="649.8"/>
+</svg>

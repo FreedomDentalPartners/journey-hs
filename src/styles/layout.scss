@@ -1,0 +1,23 @@
+body {
+    background: $dark;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container {
+    @include media-breakpoint-down(sm) {
+        max-width: 90%;
+    }
+}
+
+.section-anchor {
+    position: absolute;
+    top: -48px;
+    left: 0;
+    @include media-breakpoint-up(lg) {
+        top: -64px;
+    }
+}
