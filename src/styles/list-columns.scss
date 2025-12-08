@@ -9,8 +9,12 @@
 
     .list-column {
         &--header {
-            color: $green;
+            color: $white;
             text-align: center;
+
+            strong {
+                color: $purple-light;
+            }
         }
 
         &--subheader {
@@ -41,7 +45,7 @@
         }
 
         &--column_header {
-            color: $green;
+            color: $purple-light;
             max-width: 23ch;
         }
 
@@ -72,7 +76,7 @@
                         top: 0;
                         width: 32px;
                         height: 32px;
-                        background: url("https://22155741.fs1.hubspotusercontent-na1.net/hubfs/22155741/icon-checkmark-green.svg");
+                        background: url("https://8466992.fs1.hubspotusercontent-na1.net/hubfs/8466992/icon-checkmark-purple.svg");
                     }
                 }
             }
@@ -89,6 +93,7 @@
             }
         }
     }
+
 
     &.light {
         background: $white;

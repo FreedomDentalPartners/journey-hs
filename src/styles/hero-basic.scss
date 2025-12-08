@@ -1,7 +1,5 @@
 .hero-basic-sec {
     .hero-basic {
-        // height: calc(100vh - 7rem);
-        // min-height: 710px;
         min-height: 100vh;
         padding-top: 15%;
         padding-bottom: 15%;
@@ -84,13 +82,11 @@
         }
 
         &--header {
-            color: $white;
             text-align: center;
             margin: 0 auto 2rem;
             padding: 0;
             max-width: 23ch;
-            color: $green;
-            // margin-bottom: 0;
+            color: $purple-light;
         }
 
         &--subheader {
@@ -116,7 +112,7 @@
                 color: $white;
 
                 a {
-                    color: $green;
+                    color: $purple-light;
                 }
             }
         }

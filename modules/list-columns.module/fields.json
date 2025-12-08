@@ -13,9 +13,9 @@
     "multiple": false
   },
   {
-    "name": "header",
-    "label": "Header",
-    "type": "text",
+    "name": "heading",
+    "label": "Heading",
+    "type": "richtext",
     "allow_new_line": true
   },
   {

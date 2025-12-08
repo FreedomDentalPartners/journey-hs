@@ -127,7 +127,7 @@
         margin: 0 1.5rem;
         padding: 0;
         border-radius: 50%;
-        border: 3px solid $green;
+        border: 3px solid $purple-light;
         position: relative;
         transition-duration: 0.3s;
         cursor: pointer;
@@ -142,7 +142,7 @@
             transition-duration: 0.3s;
 
             path {
-                stroke: $green;
+                stroke: $purple-light;
                 stroke-width: 10px;
                 transition-duration: 0.3s;
             }
@@ -155,17 +155,17 @@
         }
 
         &:hover {
-            border: 3px solid $green !important;
+            border: 3px solid $purple !important;
         }
 
         @include media-breakpoint-up(lg) {
             &:hover {
-                background: $green;
+                background: $purple;
                 transition-duration: 0.3s;
     
                 svg {
                     path {
-                        stroke: $dark;
+                        stroke: $white;
                     }
                 }
             }
