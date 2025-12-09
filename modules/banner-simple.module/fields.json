@@ -27,6 +27,11 @@
     "type": "url"
   },
   {
+    "name": "anchor_link",
+    "label": "Anchor Link",
+    "type": "text"
+  },
+  {
     "name": "link_text_2",
     "label": "Link 2 Text",
     "type": "text"
@@ -37,8 +42,8 @@
     "type": "url"
   },
   {
-    "name": "anchor_link",
-    "label": "Anchor Link",
+    "name": "anchor_link_2",
+    "label": "Anchor Link 2",
     "type": "text"
   }
 ]

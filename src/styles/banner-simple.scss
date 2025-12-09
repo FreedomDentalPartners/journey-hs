@@ -1,7 +1,7 @@
 .banner-simple-sec {
     .banner-simple {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
         position: relative;
         @include media-breakpoint-up(md) {
             display: flex;
@@ -9,8 +9,8 @@
             align-items: center;
         }
         @include media-breakpoint-up(lg) {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
+            padding-top: 8.5rem;
+            padding-bottom: 8.5rem;
         }
         
         .content-wrap {

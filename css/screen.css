@@ -13820,7 +13820,7 @@ h6, .h6, h6 > p, .h6 > p {
 
 p {
   font-family: Outfit, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.175rem;
   font-style: normal;
   font-weight: 500;
 }
@@ -14047,6 +14047,7 @@ p {
 
 body {
   background: #0b093c;
+  padding-bottom: 5rem;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -14710,7 +14711,7 @@ body {
 
 .hero-basic-sec .hero-basic .btn-arrow {
   grid-row: 3 / 4;
-  margin: 2rem auto 0;
+  margin: 3rem auto 0;
 }
 
 @media (width >= 768px) {
@@ -14739,7 +14740,7 @@ body {
   color: #fff;
   text-align: center;
   max-width: 55ch;
-  margin: 0 auto 2rem;
+  margin: 0 auto 2.5rem;
   font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.4;
@@ -14760,6 +14761,13 @@ body {
 
 .hero-basic-sec .hero-basic--body_text p {
   color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.hero-basic-sec .hero-basic--body_text p:last-of-type {
+  margin-bottom: 0;
+  font-size: 1.25rem;
 }
 
 .hero-basic-sec .hero-basic--body_text p a {
@@ -14806,8 +14814,8 @@ body {
 }
 
 .banner-simple-sec .banner-simple {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
   position: relative;
 }
 
@@ -14821,8 +14829,8 @@ body {
 
 @media (width >= 992px) {
   .banner-simple-sec .banner-simple {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
   }
 }
 
@@ -15014,6 +15022,100 @@ body {
 
 .section-basic-content .basic-content--body p strong {
   color: #564bc6;
+}
+
+.section-image-content {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+@media (width >= 992px) {
+  .section-image-content {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.section-image-content .image-content--header {
+  color: #fff;
+}
+
+.section-image-content .image-content--header strong {
+  color: #a9a7ff;
+  letter-spacing: -.375px;
+  font-family: Outfit, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.section-image-content .image-content .block {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+}
+
+.section-image-content .image-content .block:first-of-type {
+  padding-top: 0;
+}
+
+.section-image-content .image-content .block:last-of-type {
+  border-bottom: none;
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+@media (width >= 992px) {
+  .section-image-content .image-content .block {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .section-image-content .image-content .block:last-of-type {
+    padding-top: 5rem;
+  }
+}
+
+.section-image-content .image-content .block--header {
+  color: #a9a7ff;
+  letter-spacing: -.375px;
+  font-family: Outfit, sans-serif;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.section-image-content .image-content .block--subheader {
+  font-size: 1.375rem;
+}
+
+.section-image-content .image-content .block--body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-image-content .image-content .block--image {
+  height: 300px;
+  position: relative;
+}
+
+@media (width >= 768px) {
+  .section-image-content .image-content .block--image {
+    height: 450px;
+  }
+}
+
+.section-image-content .image-content .block--image img {
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .list-column-sec {

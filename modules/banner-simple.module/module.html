@@ -4,24 +4,24 @@
             <div class="text-wrap">
                 <h2 class="banner-simple--header">{{ module.header }}</h2>
                 <h3 class="banner-simple--subheader">{{ module.subheader }}</h3>
-                <div class="banner-simple--body_text">{{ module.body_text }}</div>
+                {% if module.body_text %}
+                    <div class="banner-simple--body_text">{{ module.body_text }}</div>
+                {% endif %}
             </div>
 
             {% if module.link_text_1 %}
-            <div class="button-wrap mt-3">
+            <div class="button-wrap mt-2">
                 {% if module.link_text_1 %}
-                   <a href="{{ module.link_url_1 }}" class="btn btn-primary mt-4 mt-lg-5 mx-lg-3">{{ module.link_text_1 }}</a>
+                    {% if module.anchor_link %}
+                        <a href="{{ module.anchor_link }}" class="btn btn-primary mt-4 mx-lg-3" aria-label="Link to {{ module.anchor_link}} section" role="button">{{ module.link_text_1 }}</a>
+                    {% else %}
+                        <a href="{{ module.link_url_1 }}" class="btn btn-primary mt-4 mx-lg-3">{{ module.link_text_1 }}</a>
+                    {% endif %}
                 {% endif %}
                 {% if module.link_text_2 %}
-                   <a href="{{ module.link_url_2 }}" class="btn btn-secondary mt-4 mt-lg-5 mx-lg-3">{{ module.link_text_2 }}</a>
+                   <a href="{{ module.link_url_2 }}" class="btn btn-secondary mt-4 mx-lg-3">{{ module.link_text_2 }}</a>
                 {% endif %}
             </div>
-            {% endif %}
-
-            {% if module.anchor_link %}
-                <a href="{{ module.anchor_link }}" class="btn btn-arrow" aria-label="Link to {{ module.anchor_link}} section" role="button">
-                    {% include "../../templates/partials/icon-arrow.html" %}
-                </a>
             {% endif %}
         </div>
     </div>

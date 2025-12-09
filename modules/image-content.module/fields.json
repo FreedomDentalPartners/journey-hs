@@ -2,8 +2,7 @@
   {
     "name": "header",
     "label": "Header",
-    "type": "text",
-    "display": "textarea"
+    "type": "richtext"
   },
   {
     "name": "subheader",

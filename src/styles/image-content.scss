@@ -1,0 +1,87 @@
+.section-image-content {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    @include media-breakpoint-up(lg) {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .image-content {
+        &--header {
+            color: $white;
+            
+            strong {
+                color: $purple-light;
+                @include outfit-800;
+            }
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid $white;
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+            &:last-of-type {
+                padding-bottom: 0;
+                padding-top: 3rem;
+                border-bottom: none;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex-direction: row;
+                align-items: center;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+
+                &:last-of-type {
+                    padding-top: 5rem;
+                }
+            }
+
+            &--header {
+                color: $purple-light;
+                @include outfit-800;
+                font-size: 1.625rem;
+            }
+
+            &--subheader {
+                font-size: 1.375rem;
+            }
+
+            &--body {
+                p {
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &--image {
+                height: 300px;
+                position: relative;
+                @include media-breakpoint-up(md) {
+                    height: 450px;
+                }
+                // @include media-breakpoint-up(lg) {
+                //     height: 380px;
+                // }
+                
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center top;
+                }
+            }
+        }
+    }
+}
