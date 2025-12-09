@@ -6,7 +6,7 @@
     font-size: 1.25rem;
     @include outfit-700;
     transition-duration: 0.2s;
-    border-radius: 40px;
+    border-radius: 8px;
     line-height: 1.7;
     @include media-breakpoint-up(lg) {
         font-size: 1.25rem;
@@ -14,8 +14,8 @@
 
     &-primary {
         color: $white;
-        background-color: $green-dark;
-        border: 2px solid $green-dark;
+        background-color: $purple;
+        border: 2px solid $purple;
 
         &:hover, &:focus, &:focus-visible, &:active {
             color: $dark;

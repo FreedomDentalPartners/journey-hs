@@ -13856,7 +13856,7 @@ p {
 }
 
 .btn {
-  border-radius: 40px;
+  border-radius: 8px;
   width: fit-content;
   min-width: 250px;
   padding: 1rem 2.25rem;
@@ -13876,8 +13876,8 @@ p {
 
 .btn-primary {
   color: #fff;
-  background-color: #00a792;
-  border: 2px solid #00a792;
+  background-color: #564bc6;
+  border: 2px solid #564bc6;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:focus-visible {
@@ -14107,7 +14107,7 @@ body {
 }
 
 .hbspt-form .hs-richtext a, .hs-form .hs-richtext a {
-  color: #8feccd;
+  color: #a9a7ff;
   font-weight: 700;
 }
 
@@ -14119,7 +14119,7 @@ body {
 }
 
 .hbspt-form label, .hs-form label {
-  color: #8feccd;
+  color: #a9a7ff;
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -14273,9 +14273,9 @@ body {
 
 .hbspt-form .hs-button, .hs-form .hs-button {
   color: #fff;
-  background-color: #00a792;
-  border: 2px solid #00a792;
-  border-radius: 40px;
+  background-color: #564bc6;
+  border: 2px solid #564bc6;
+  border-radius: 8px;
   width: fit-content;
   min-width: 250px;
   margin: .75rem auto 0;
@@ -14878,7 +14878,7 @@ body {
 }
 
 .banner-simple-sec .banner-simple--header {
-  color: #8feccd;
+  color: #a9a7ff;
   text-align: center;
   max-width: 23ch;
   margin: 0 auto 2rem;
@@ -14913,7 +14913,7 @@ body {
 }
 
 .banner-simple-sec .banner-simple--body_text p a {
-  color: #8feccd;
+  color: #a9a7ff;
 }
 
 .banner-simple-sec .banner-simple--image {

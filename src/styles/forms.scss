@@ -32,7 +32,7 @@
 
 
     .hs-richtext a {
-        color: $green;
+        color: $purple-light;
         font-weight: 700;
     }   
 
@@ -42,7 +42,7 @@
     }
 
     label {
-        color: $green;
+        color: $purple-light;
         font-size: 1.1rem;
         margin-bottom: 1rem;
         // margin-left: 0.4rem;
@@ -160,11 +160,11 @@
         font-size: 1.25rem;
         @include outfit-700;
         transition-duration: 0.2s;
-        border-radius: 40px;
+        border-radius: 8px;
         line-height: 1.7;
         color: $white;
-        background-color: $green-dark;
-        border: 2px solid $green-dark;
+        background-color: $purple;
+        border: 2px solid $purple;
         @include media-breakpoint-up(lg) {
             margin: 1.75rem auto 0;
             font-size: 1.25rem;

@@ -1,0 +1,31 @@
+[
+  {
+    "name": "header",
+    "label": "Header",
+    "type": "text",
+    "display": "textarea"
+  },
+  {
+    "name": "subheader",
+    "label": "Subheader",
+    "type": "text",
+    "display": "textarea"
+  },
+  {
+    "name": "blocks",
+    "label": "Blocks",
+    "type": "group",
+    "occurrence": {
+      "min": 0,
+      "max": 6,
+      "default": 0,
+      "sorting_label_field": "blocks.block_header"
+    },
+    "children": [
+      { "name": "block_image", "label": "Image", "type": "image" },
+      { "name": "block_header", "label": "Header", "type": "text" },
+      { "name": "block_subheader","label": "Subheader", "type": "text" },
+      { "name": "block_body", "label": "Body", "type": "richtext" }
+    ]
+  }
+]

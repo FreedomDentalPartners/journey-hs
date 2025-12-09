@@ -1,0 +1,26 @@
+<section class="section-image-content">
+    <div class="container image-content">
+        <div class="row">
+            <div class="text-wrap">
+                <h2 class="image-content--header">{{ module.header }}</h2>
+                {% if module.subheader %}
+                    <h3 class="h3 image-content--subheader">{{ module.subheader }}</h3>
+                {% endif %}
+            </div>
+
+            {% for block in module.blocks %}
+            <div class="block">
+                <div class="hero-basic--image">
+                    <img src="{{ block.block_image.src }}" alt="{{ block.block_image.alt|escape }}">
+                </div>
+                <div class="text-wrap">
+                    <h4 class="block--header">{{ block.block_header }}</h4>
+                    <h5 class="block--subheader">{{ block.block_subheader }}</h5>
+                    <div class="block--subheader">{{ block.block_body }}</div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
