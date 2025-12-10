@@ -81,6 +81,12 @@
             }
         }
 
+        &--lead {
+            text-align: center;
+            color: $white;
+            @include outfit-700;
+        }
+
         &--header {
             text-align: center;
             margin: 0 auto 2rem;

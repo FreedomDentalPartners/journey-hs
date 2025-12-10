@@ -2,6 +2,9 @@
     <div class="container hero-basic">
         <div class="row content-wrap">
             <div class="text-wrap">
+                {% if module.lead %}
+                <h4 class="hero-basic--lead mb-4">{{ module.lead }}</h4>
+                {% endif %}
                 <h1 class="hero-basic--header">{{ module.header }}</h1>
                 <h2 class="hero-basic--subheader">{{ module.subheader }}</h2>
                 <div class="hero-basic--body_text">{{ module.body_text }}</div>

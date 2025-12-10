@@ -1,0 +1,82 @@
+.swiper {
+    padding-bottom: 4rem;
+
+    &-pagination {
+        &-bullet {
+            width: 12px;
+            height: 12px;
+            background: $white;
+            margin: 0 0.4rem;
+            border-radius: 50%;
+            transition-duration: 0.3s;
+            cursor: pointer;
+            @include media-breakpoint-up(md) {
+                margin: 0 0.375rem;
+            }
+
+            &-active {
+                background: $purple;
+            }
+        }
+    }
+
+    .swiper-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+        margin: 2rem auto;
+        align-items: center;
+
+        .swiper-button {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border: 2px solid $white;
+            position: relative;
+            transition-duration: 0.3s;
+            cursor: pointer;
+
+            svg {
+                position: absolute;
+                width: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition-duration: 0.3s;
+
+                path {
+                    stroke: $white;
+                    stroke-width: 12px;
+                    transition-duration: 0.3s;
+                }
+            }
+
+            &-prev {
+                svg {
+                    transform: translate(-50%, -50%) rotate(180deg);
+                }
+            }
+
+            &:hover {
+                @include media-breakpoint-up(lg) {
+                    background: $purple-light;
+                    border-color: $purple-light;
+                    transition-duration: 0.3s;
+    
+                    svg {
+                        path {
+                            stroke: $dark;
+                            stroke-width: 14px;
+                        }
+                    }
+                }
+            }
+
+            &-disabled {
+                pointer-events: none;
+                opacity: 0.3;
+                cursor: default;
+            }
+        }
+    }
+}

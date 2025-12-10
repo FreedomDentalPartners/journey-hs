@@ -1,0 +1,77 @@
+<section class="testimonial-swiper-sec">
+  <div class="container">
+    <div class="row">
+      <div class="header-wrap col-xl-5">
+        <h2 class="header">{{ module.header }}</h2>
+        <p class="subheader">{{ module.subheader }}</p>
+        <div class="swiper ms-0 pb-0">
+          <div class="swiper-buttons mb-0 d-none d-xl-flex">
+            <div class="swiper-button swiper-button-prev ms-0">{% include "../../templates/partials/icon-arrow.html" %}</div>
+            <div class="swiper-pagination d-flex justify-content-center"></div>
+            <div class="swiper-button swiper-button-next">{% include "../../templates/partials/icon-arrow.html" %}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <div class="testimonial-swiper testimonial-swiper-mobile swiper d-xl-none">
+        <div class="swiper-wrapper">
+            {% for block in module.blocks %}
+                <div class="swiper-slide px-3">
+                    <div class="swiper-slide--image">
+                        <img src="{{ block.block_image.src }}" alt="{{ block.block_image.alt|escape }}">
+                    </div>
+                    <div class="quote">
+                        <div class="swiper-slide--body">{{ block.block_body }}</div>
+                        <h3 class="h6 swiper-slide--name mb-3">- {{ block.block_name }}</h3>
+                        {% if block.title %}
+                            <h4 class="h6 swiper-slide--title mb-0">{{ block.block_title }}</h4>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-buttons pt-3 mt-4">
+          <div class="swiper-button swiper-button-prev">{% include "../../templates/partials/icon-arrow.html" %}</div>
+          <div class="swiper-pagination d-flex justify-content-center"></div>
+          <div class="swiper-button swiper-button-next">{% include "../../templates/partials/icon-arrow.html" %}</div>
+        </div>
+      </div>
+      <!-- END Mobile -->
+
+
+      <!-- Desktop -->
+      <div class="testimonial-swiper testimonial-swiper-desktop swiper d-none d-xl-block col-xl-6 pb-3">
+        <div class="swiper-wrapper">
+            {% for block in module.blocks %}
+                <div class="swiper-slide px-3 ps-xl-4 pe-xl-0">
+                    <div class="swiper-slide--image d-xl-none">
+                        <img src="{{ block.block_image.src }}" alt="{{ block.block_image.alt|escape }}">
+                    </div>
+                    <div class="quote">
+                        <div class="swiper-slide--body">{{ block.block_body }}</div>
+                        <div class="person">
+                            {% if block.block_image %}
+                            <div class="swiper-slide--image d-none d-xl-block">
+                                <img src="{{ block.block_image.src }}" alt="{{ block.block_image.alt|escape }}">
+                            </div>
+                            {% endif %}
+                            <div class="person-info">
+                                <h3 class="h6 swiper-slide--name mb-3">- {{ block.block_name }}</h3>
+                                {% if block.title %}
+                                    <h4 class="h6 swiper-slide--title mb-0">{{ block.block_title }}</h4>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+      </div>
+      <!-- END Desktop -->
+
+
+
+    </div>
+  </div>
+</section>
