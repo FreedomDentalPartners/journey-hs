@@ -45,5 +45,12 @@
     "name": "anchor_link_2",
     "label": "Anchor Link 2",
     "type": "text"
+  },
+  {
+    "name": "minimize_padding",
+    "label": "Minimize Padding",
+    "type": "boolean",
+    "default": false,
+    "required": false
   }
 ]

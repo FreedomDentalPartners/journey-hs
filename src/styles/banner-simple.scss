@@ -12,6 +12,10 @@
             padding-top: 8.5rem;
             padding-bottom: 8.5rem;
         }
+
+        &.padding-min {
+            padding-bottom: 0rem;
+        }
         
         .content-wrap {
             display: grid;

@@ -14922,6 +14922,10 @@ body {
   }
 }
 
+.banner-simple-sec .banner-simple.padding-min {
+  padding-bottom: 0;
+}
+
 .banner-simple-sec .banner-simple .content-wrap {
   grid-template-rows: repeat(10, auto);
   height: 100%;
@@ -15238,6 +15242,20 @@ body {
   .list-column-sec .list-column--subheader {
     margin-top: 2.5rem;
   }
+}
+
+.list-column-sec .list-column--subbody {
+  text-align: center;
+  color: #fff;
+  max-width: 65ch;
+  margin: 6rem auto 0;
+  font-family: Outfit, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.list-column-sec .list-column--subbody a {
+  color: #a9a7ff;
 }
 
 .list-column-sec .list-column--btn {

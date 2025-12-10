@@ -26,6 +26,18 @@
             }
         }
 
+        &--subbody {
+            margin: 6rem auto 0;
+            @include outfit-600;
+            max-width: 65ch;
+            text-align: center;
+            color: $white;
+
+            a {
+                color: $purple-light;
+            }
+        }
+
         &--btn {
             margin: 2rem auto 0;
         }

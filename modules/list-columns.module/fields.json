@@ -53,6 +53,11 @@
     ]
   },
   {
+    "name": "sub_body",
+    "label": "Sub Body",
+    "type": "richtext"
+  },
+  {
     "name": "link_text",
     "label": "Link Text",
     "type": "text"
