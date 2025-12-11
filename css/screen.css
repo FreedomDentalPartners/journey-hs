@@ -14923,7 +14923,7 @@ body {
 }
 
 .banner-simple-sec .banner-simple.padding-min {
-  padding-bottom: 0;
+  padding-bottom: 1.5rem;
 }
 
 .banner-simple-sec .banner-simple .content-wrap {
@@ -14977,10 +14977,18 @@ body {
   transform: translate(-50%, -50%)rotate(90deg);
 }
 
+.banner-simple-sec .banner-simple--lead {
+  text-align: center;
+  color: #fff;
+  font-family: Outfit, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .banner-simple-sec .banner-simple--header {
   color: #a9a7ff;
   text-align: center;
-  max-width: 23ch;
+  max-width: 24ch;
   margin: 0 auto 2rem;
   padding: 0;
 }
@@ -15004,8 +15012,13 @@ body {
 
 .banner-simple-sec .banner-simple--body_text {
   text-align: center;
+  color: #fff;
   max-width: 80ch;
   margin: 0 auto;
+  font-family: Outfit, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .banner-simple-sec .banner-simple--body_text p {

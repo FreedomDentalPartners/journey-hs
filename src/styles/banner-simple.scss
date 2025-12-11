@@ -14,7 +14,7 @@
         }
 
         &.padding-min {
-            padding-bottom: 0rem;
+            padding-bottom: 1.5rem;
         }
         
         .content-wrap {
@@ -59,12 +59,18 @@
             }
         }
 
+        &--lead {
+            text-align: center;
+            color: $white;
+            @include outfit-700;
+        }
+
         &--header {
             color: $white;
             text-align: center;
             margin: 0 auto 2rem;
             padding: 0;
-            max-width: 23ch;
+            max-width: 24ch;
             color: $purple-light;
             // margin-bottom: 0;
         }
@@ -84,9 +90,12 @@
         }
 
         &--body_text {
+            @include outfit-700;
+            font-size: 1.5rem;
             max-width: 80ch;
             margin: 0 auto;
             text-align: center;
+            color: $white;
 
             p {
                 color: $white;
