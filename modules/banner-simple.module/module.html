@@ -1,14 +1,17 @@
 <section class="section banner-simple-sec">
     <div class="container banner-simple {% if module.minimize_padding %}padding-min{% endif %}">
-        <div class="row content-wrap">
-            <div class="text-wrap">
+        <div class="row content-wrap {% if module.align_left %} ms-0 {% endif %}">
+            <div class="text-wrap {% if module.align_left %} align-left {% endif %}">
                 {% if module.lead %}
                     <h4 class="banner-simple--lead mb-4">{{ module.lead }}</h4>
                 {% endif %}
                 <h2 class="banner-simple--header">{{ module.header }}</h2>
                 <h3 class="banner-simple--subheader">{{ module.subheader }}</h3>
-                {% if module.body_text %}
+                {% if module.body_text|striptags|trim|length > 0 %}
                     <div class="banner-simple--body_text">{{ module.body_text }}</div>
+                {% endif %}
+                {% if module.long_text %}
+                    <div class="banner-simple--long_text">{{ module.long_text }}</div>
                 {% endif %}
             </div>
 

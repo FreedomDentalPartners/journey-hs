@@ -14824,6 +14824,11 @@ body {
   padding: 0;
 }
 
+.hero-basic-sec .hero-basic--header strong {
+  color: #fff;
+  font-weight: 800;
+}
+
 .hero-basic-sec .hero-basic--subheader {
   color: #fff;
   text-align: center;
@@ -14934,7 +14939,12 @@ body {
 }
 
 .banner-simple-sec .banner-simple .text-wrap {
+  text-align: center;
   grid-row: 2 / 3;
+}
+
+.banner-simple-sec .banner-simple .text-wrap.align-left {
+  text-align: left !important;
 }
 
 @media (width >= 768px) {
@@ -14978,7 +14988,6 @@ body {
 }
 
 .banner-simple-sec .banner-simple--lead {
-  text-align: center;
   color: #fff;
   font-family: Outfit, sans-serif;
   font-style: normal;
@@ -14987,17 +14996,15 @@ body {
 
 .banner-simple-sec .banner-simple--header {
   color: #a9a7ff;
-  text-align: center;
-  max-width: 24ch;
-  margin: 0 auto 2rem;
+  max-width: 26ch;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
 .banner-simple-sec .banner-simple--subheader {
   color: #fff;
-  text-align: center;
   max-width: 55ch;
-  margin: 0 auto 2rem;
+  margin-bottom: 2rem;
   font-size: 1.625rem;
   font-weight: 600;
   line-height: 1.4;
@@ -15011,7 +15018,6 @@ body {
 }
 
 .banner-simple-sec .banner-simple--body_text {
-  text-align: center;
   color: #fff;
   max-width: 80ch;
   margin: 0 auto;
@@ -15027,6 +15033,27 @@ body {
 
 .banner-simple-sec .banner-simple--body_text p a {
   color: #a9a7ff;
+}
+
+.banner-simple-sec .banner-simple--long_text {
+  color: #fff;
+  max-width: 68ch;
+  margin: 0 auto;
+  font-family: Outfit, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (width >= 768px) {
+  .banner-simple-sec .banner-simple--long_text {
+    font-size: 1.375rem;
+  }
+}
+
+.banner-simple-sec .banner-simple--long_text strong {
+  color: #a9a7ff;
+  font-weight: 800;
 }
 
 .banner-simple-sec .banner-simple--image {

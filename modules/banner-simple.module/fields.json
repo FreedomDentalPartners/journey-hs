@@ -23,6 +23,11 @@
     "type": "richtext"
   },
   {
+    "name": "long_text",
+    "label": "Long Text",
+    "type": "richtext"
+  },
+  {
     "name": "link_text_1",
     "label": "Link 1 Text",
     "type": "text"
@@ -55,6 +60,13 @@
   {
     "name": "minimize_padding",
     "label": "Minimize Padding",
+    "type": "boolean",
+    "default": false,
+    "required": false
+  },
+  {
+    "name": "align_left",
+    "label": "Align Text Left",
     "type": "boolean",
     "default": false,
     "required": false
