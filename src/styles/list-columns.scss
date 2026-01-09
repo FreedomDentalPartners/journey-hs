@@ -11,6 +11,10 @@
         &--header {
             color: $white;
             text-align: center;
+            margin-bottom: 2rem;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 4rem;
+            }
 
             strong {
                 color: $purple-light;
@@ -57,11 +61,17 @@
         }
 
         &--column_header {
-            color: $purple-light;
-            max-width: 23ch;
+            color: $white;
+            max-width: 32ch;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
         }
 
         &--column_content {
+            p {
+                color: $white;
+            }
+
             ul {
                 margin-bottom: 0;
                 padding-left: 0rem;

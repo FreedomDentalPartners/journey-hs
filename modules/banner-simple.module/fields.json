@@ -1,5 +1,18 @@
 [
   {
+    "name": "theme_color",
+    "label": "Theme",
+    "type": "choice",
+    "display": "select",
+    "choices": [
+      [ "dark", "Dark" ],
+      [ "light", "Light" ]
+    ],
+    "default": "dark",
+    "required": true,
+    "multiple": false
+  },
+  {
     "name": "lead",
     "label": "Lead",
     "type": "text",
@@ -58,8 +71,15 @@
     "type": "text"
   },
   {
-    "name": "minimize_padding",
-    "label": "Minimize Padding",
+    "name": "minimize_bottom_padding",
+    "label": "Minimize Bottom Padding",
+    "type": "boolean",
+    "default": false,
+    "required": false
+  },
+  {
+    "name": "minimize_top_padding",
+    "label": "Minimize Top Padding",
     "type": "boolean",
     "default": false,
     "required": false

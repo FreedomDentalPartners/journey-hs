@@ -6,13 +6,13 @@
         <div class="row">
             {% if module.heading %}
                <div class="header-wrap d-flex flex-column">
-                   <h2 class="h2 list-column--header mb-4 pb-2">{{ module.heading }}</h2>
+                   <h2 class="h2 list-column--header">{{ module.heading }}</h2>
                </div>
             {% endif %}
             <div class="d-flex flex-column flex-lg-row">
                 {% for block in module.blocks %}
                    <div class="list-column--block col {% if block.icon == 'x_mark' %}x_mark{% endif %}">
-                        <h3 class="list-column--column_header mb-4 pb-lg-2">{{ block.column_header }}</h3>
+                        <h3 class="list-column--column_header">{{ block.column_header }}</h3>
                         <div class="list-column--column_content">{{ block.content }}</div>
                    </div>
                 {% endfor %}

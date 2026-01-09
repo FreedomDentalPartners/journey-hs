@@ -1,5 +1,5 @@
-<section class="section banner-simple-sec">
-    <div class="container banner-simple {% if module.minimize_padding %}padding-min{% endif %}">
+<section class="section banner-simple-sec {% if module.theme_color == 'light' %}theme-light{% endif %}">
+    <div class="container banner-simple {% if module.minimize_bottom_padding %}pb-min{% endif %} {% if module.minimize_top_padding %}pt-min{% endif %}">
         <div class="row content-wrap {% if module.align_left %} ms-0 {% endif %}">
             <div class="text-wrap {% if module.align_left %} align-left {% endif %}">
                 {% if module.lead %}

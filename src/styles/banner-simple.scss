@@ -13,8 +13,12 @@
             padding-bottom: 8.5rem;
         }
 
-        &.padding-min {
+        &.pb-min {
             padding-bottom: 1.5rem;
+        }
+
+        &.pt-min {
+            padding-top: 1.5rem;
         }
         
         .content-wrap {
@@ -148,6 +152,37 @@
             }
             @include media-breakpoint-up(xxl) {
                 padding-left: 5rem;
+            }
+        }
+    }
+
+
+    &.theme-light {
+        background: $white;
+        
+        .banner-simple {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            @include media-breakpoint-up(lg) {
+                padding-top: 5.5rem;
+                padding-bottom: 5.5rem;
+            }
+        }
+
+        .banner-simple--header {
+            color: $purple;
+        }
+
+        .banner-simple--subheader {
+            color: $dark;
+            font-weight: 700;
+        }
+
+        .banner-simple--body_text, .banner-simple--long_text {
+            color: $dark;
+
+            strong {
+                color: $purple;
             }
         }
     }
