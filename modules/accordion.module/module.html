@@ -1,0 +1,43 @@
+<section class="section-accordion">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+          <h2 class="section-accordion__header">{{ module.header }}</h2>
+      </div>
+
+      <div class="mt-lg-4">
+        <div class="accordion" id="section-accordion">
+            {% set x = 0 %}
+            {% for block in module.blocks %}
+                <div class="accordion-item">
+                    <div class="accordion-block py-4" id="headingOne">
+                        <div class="accordion-icon">
+                        <div class="accordion-icon__line"></div>
+                        <div class="accordion-icon__line"></div>
+                        </div>
+                        <button 
+                        id="accordion-button-{{ x }}" 
+                        class="accordion-button collapsed" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapse-{{ x }}" 
+                        aria-label="{{ block.block_label }}"
+                        aria-expanded="false" 
+                        aria-controls="collapse-{{ x }}">                    
+                        </button>
+                        <h3 class="accordion-header">{{ block.block_label }}</h3>
+                    </div>
+                    <div id="collapse-{{ x }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ x }}" data-bs-parent="#section-accordion">
+                        <div class="col-12 accordion-body">
+                        {{ block.block_body }}
+                        </div>
+                    </div>
+                </div>
+               {% set x = x + 1 %}
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
