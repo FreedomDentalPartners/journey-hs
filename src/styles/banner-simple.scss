@@ -79,8 +79,11 @@
             color: $white;
             margin-bottom: 2rem;
             padding: 0;
-            max-width: 26ch;
+            max-width: 16ch;
             color: $purple-light;
+            @include media-breakpoint-up(xl) {
+                max-width: 26ch;
+            }
         }
 
         &--subheader {

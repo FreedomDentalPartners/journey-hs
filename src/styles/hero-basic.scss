@@ -26,8 +26,15 @@
 
         .text-wrap {
             grid-row: 2/3;
+            max-width: 320px;
+            @include media-breakpoint-up(sm) {
+                max-width: 540px;
+            }
             @include media-breakpoint-up(md) {
                 grid-row: 3/4;
+            }
+            @include media-breakpoint-up(lg) {
+                max-width: none;
             }
         }
         

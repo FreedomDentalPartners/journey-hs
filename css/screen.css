@@ -14981,11 +14981,24 @@ body {
 
 .hero-basic-sec .hero-basic .text-wrap {
   grid-row: 2 / 3;
+  max-width: 320px;
+}
+
+@media (width >= 576px) {
+  .hero-basic-sec .hero-basic .text-wrap {
+    max-width: 540px;
+  }
 }
 
 @media (width >= 768px) {
   .hero-basic-sec .hero-basic .text-wrap {
     grid-row: 3 / 4;
+  }
+}
+
+@media (width >= 992px) {
+  .hero-basic-sec .hero-basic .text-wrap {
+    max-width: none;
   }
 }
 
@@ -15250,9 +15263,15 @@ body {
 
 .banner-simple-sec .banner-simple--header {
   color: #a9a7ff;
-  max-width: 26ch;
+  max-width: 16ch;
   margin-bottom: 2rem;
   padding: 0;
+}
+
+@media (width >= 1200px) {
+  .banner-simple-sec .banner-simple--header {
+    max-width: 26ch;
+  }
 }
 
 .banner-simple-sec .banner-simple--subheader {
