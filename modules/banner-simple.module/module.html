@@ -1,7 +1,7 @@
 <section class="section banner-simple-sec {% if module.theme_color == 'light' %}theme-light{% endif %}">
     <div class="container banner-simple {% if module.minimize_bottom_padding %}pb-min{% endif %} {% if module.minimize_top_padding %}pt-min{% endif %}">
         <div class="row content-wrap {% if module.align_left %} ms-0 {% endif %}">
-            <div class="text-wrap {% if module.align_left %} align-left {% endif %}">
+            <div class="text-wrap px-0{% if module.align_left %} align-left {% endif %}">
                 {% if module.lead %}
                     <h4 class="banner-simple--lead mb-4">{{ module.lead }}</h4>
                 {% endif %}
@@ -16,7 +16,7 @@
             </div>
 
             {% if module.link_text_1 %}
-            <div class="button-wrap mt-2">
+            <div class="button-wrap">
                 {% if module.link_text_1 %}
                     {% if module.anchor_link %}
                         <a href="{{ module.anchor_link }}" class="btn btn-primary mt-4 mx-lg-3" aria-label="Link to {{ module.anchor_link}} section" role="button">{{ module.link_text_1 }}</a>

@@ -1,0 +1,34 @@
+<section class="image-two-col-sec">
+  <div class="container image-two-col">
+    <div class="row">
+      <h2 class="image-two-col--header pb-2">{{ module.header }}</h2>
+      {% if module.body %}
+         <h3 class="h4 image-two-col--body">{{ module.body }}</h3>
+      {% endif %}
+      <div class="block-wrapper">
+        {% for block in module.blocks %}
+            <div class="block-wrapper--column col-12 col-md-6">
+                <div class="line-sep d-none d-lg-block"></div>
+                <h4 class="h3 block-wrapper--column__header mb-2">{{ block.block_header }}</h4>
+
+                {% if block.block_subheader %}
+                    <h5 class="h4 block-wrapper--column__subheader mb-0">{{ block.block_subheader }}</h4>
+                {% endif %}
+
+                {% if block.block_image %}
+                <div class="block-wrapper--column__image mt-4 mb-4">
+                        <img src="{{ block.block_image.src }}" alt="{{ block.block_image.alt|escape }}">
+                    </div>
+                {% endif %}
+
+                {% if block.block_body %}
+                    <p class="h4 block-wrapper--column__header mb-3">{{ block.block_body }}</p>
+                {% endif %}
+
+                <p class="block-wrapper--column__caption mb-0">{{ block.block_caption}}</p>
+            </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

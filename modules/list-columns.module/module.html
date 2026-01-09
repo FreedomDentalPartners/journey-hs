@@ -12,8 +12,10 @@
             <div class="d-flex flex-column flex-lg-row">
                 {% for block in module.blocks %}
                    <div class="list-column--block col {% if block.icon == 'x_mark' %}x_mark{% endif %}">
+                        {% if block.column_header|striptags|trim|length > 0 %}
                         <h3 class="list-column--column_header">{{ block.column_header }}</h3>
-                        <div class="list-column--column_content">{{ block.content }}</div>
+                        {% endif %}
+                        <div class="list-column--column_content {% if block.column_header|striptags|trim|length <= 0 %} mt-add{% endif %}">{{ block.content }}</div>
                    </div>
                 {% endfor %}
             </div>

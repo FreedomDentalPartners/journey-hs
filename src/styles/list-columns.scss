@@ -10,7 +10,7 @@
     .list-column {
         &--header {
             color: $white;
-            text-align: center;
+            // text-align: center;
             margin-bottom: 2rem;
             @include media-breakpoint-up(md) {
                 margin-bottom: 4rem;
@@ -23,7 +23,7 @@
 
         &--subheader {
             color: $white;
-            text-align: center;
+            // text-align: center;
             margin-top: 1rem;
             @include media-breakpoint-up(lg) {
                 margin-top: 2.5rem;
@@ -31,11 +31,14 @@
         }
 
         &--subbody {
-            margin: 6rem auto 0;
+            margin: 3rem 0 0 0;
             @include outfit-600;
             max-width: 65ch;
-            text-align: center;
+            // text-align: center;
             color: $white;
+            @include media-breakpoint-up(lg) {
+                margin-top: 4rem;
+            }
 
             a {
                 color: $purple-light;
@@ -48,8 +51,8 @@
 
         &--block {
             @include media-breakpoint-up(lg) {
-                padding-right: 2rem;
-                padding-left: 2rem;
+                padding-right: 3rem;
+                // padding-left: 2rem;
             }
 
             &:last-of-type {
@@ -68,6 +71,12 @@
         }
 
         &--column_content {
+            @include media-breakpoint-up(lg) {
+                &.mt-add {
+                    margin-top: 4rem;
+                }
+            }
+
             p {
                 color: $white;
             }

@@ -1,0 +1,43 @@
+
+<section class="grid-4-col-sec {% if module.theme_color == 'dark' %}dark{% endif %}">
+    <div class="grid-4-col container">
+        <div class="row">
+            <div class="header-wrap d-flex flex-column">
+                <h1 class="h2 grid-4-col__header mb-4 pb-2">{{ module.header }}</h1>
+                {% if module.subheader %}
+                   <h2 class="h4 grid-4-col__subheader mb-5 mt-0">{{ module.subheader }}</h2>
+                {% endif %}
+            </div>
+
+            <div class="grid-4-col__block-wrapper">
+                {% for block in module.blocks %}
+                    <div class="grid-4-col__block col-12 col-lg-6 col-xl-3">
+
+                        {% if block.block_lottie %}
+                        <div class="grid-4-col__block--image lottie-block mb-4" data-lottie="{{ block.block_lottie }}">
+                        </div>
+                        {% endif %}
+
+                        {% if block.block_image %}
+                        <div class="grid-4-col__block--image mb-4">
+                            <img src="{{ block.block_image.src }}" alt="{{ block.block_image.alt|escape }}">
+                        </div>
+                        {% endif %}
+
+                        {% if block.block_header %}
+                           <h3 class="h4 grid-4-col__block--header mb-2">{{ block.block_header }}</h3>
+                        {% endif %}
+
+                        {% if block.block_body %}
+                           <div class="grid-4-col__block--body">{{ block.block_body }}</div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+
+            {% if module.caption %}
+                <h4 class="h5 grid-4-col__caption">{{ module.caption }}</h4>
+            {% endif %}
+        </div>
+    </div>
+</section>

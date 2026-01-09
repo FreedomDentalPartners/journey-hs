@@ -1,0 +1,60 @@
+[
+  {
+    "name": "theme_color",
+    "label": "Theme",
+    "type": "choice",
+    "display": "select",
+    "choices": [
+      [ "dark", "Dark" ],
+      [ "light", "Light" ]
+    ],
+    "default": "dark",
+    "required": true,
+    "multiple": false
+  },
+  {
+    "name": "header",
+    "label": "Header",
+    "type": "text",
+    "allow_new_line": true
+  },
+  {
+    "name": "subheader",
+    "label": "Subheader",
+    "type": "text",
+    "allow_new_line": true
+  },
+  {
+    "name": "caption",
+    "label": "Caption",
+    "type": "text",
+    "allow_new_line": true
+  },
+  {
+    "name": "blocks",
+    "label": "Blocks",
+    "type": "group",
+    "occurrence": {
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "sorting_label_field": "blocks.block_header"
+    },
+    "children": [
+      { "name": "block_lottie",  "label": "Lottie Path", "type": "text" },
+      { "name": "block_image",   "label": "Image",       "type": "image" },
+      { "name": "block_header",  "label": "Header",      "type": "text" },
+      { "name": "block_body",    "label": "Body",        "type": "richtext" }
+    ]
+  },
+  {
+    "name": "link_text",
+    "label": "Link Text",
+    "type": "text"
+  },
+  {
+    "name": "link_url",
+    "label": "Link URL",
+    "type": "link"
+  }
+]
