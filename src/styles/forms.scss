@@ -163,8 +163,8 @@
         border-radius: 8px;
         line-height: 1.7;
         color: $white;
-        background-color: $purple;
-        border: 2px solid $purple;
+        background-color: $purple-med;
+        border: 2px solid $purple-med;
         @include media-breakpoint-up(lg) {
             margin: 1.75rem auto 0;
             font-size: 1.25rem;

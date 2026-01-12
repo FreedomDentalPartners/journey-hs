@@ -13876,8 +13876,8 @@ p {
 
 .btn-primary {
   color: #fff;
-  background-color: #564bc6;
-  border: 2px solid #564bc6;
+  background-color: #605bf3;
+  border: 2px solid #605bf3;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:focus-visible {
@@ -14020,12 +14020,12 @@ p {
 }
 
 .btn-arrow:hover {
-  border: 3px solid #564bc6 !important;
+  border: 3px solid #605bf3 !important;
 }
 
 @media (width >= 992px) {
   .btn-arrow:hover {
-    background: #564bc6;
+    background: #605bf3;
     transition-duration: .3s;
   }
 
@@ -14274,8 +14274,8 @@ body {
 
 .hbspt-form .hs-button, .hs-form .hs-button {
   color: #fff;
-  background-color: #564bc6;
-  border: 2px solid #564bc6;
+  background-color: #605bf3;
+  border: 2px solid #605bf3;
   border-radius: 8px;
   width: fit-content;
   min-width: 250px;
@@ -15146,6 +15146,12 @@ body {
   color: #fff;
   margin-bottom: 2rem;
   font-size: 1.325rem;
+}
+
+@media (width >= 768px) {
+  .hero-basic-sec .hero-basic--body_text p {
+    font-size: 1.375rem;
+  }
 }
 
 .hero-basic-sec .hero-basic--body_text p span {
@@ -16122,12 +16128,12 @@ body {
 }
 
 .section-accordion .accordion-item:has(.accordion-button[aria-expanded="true"]) .accordion-icon {
-  background: #a9a7ff;
-  border: 1px solid #a9a7ff;
+  background: #605bf3;
+  border: 1px solid #605bf3;
 }
 
 .section-accordion .accordion-item:has(.accordion-button[aria-expanded="true"]) .accordion-icon__line {
-  background: #0b093c;
+  background: #fff;
   height: 3px;
 }
 
@@ -16183,12 +16189,11 @@ body {
 
 .section-accordion .accordion-header {
   color: #fff;
-  letter-spacing: -.375px;
   width: 75%;
   font-family: Outfit, sans-serif;
   font-size: 1.25rem;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.3;
   transition-duration: .3s;
 }

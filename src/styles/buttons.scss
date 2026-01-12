@@ -14,8 +14,8 @@
 
     &-primary {
         color: $white;
-        background-color: $purple;
-        border: 2px solid $purple;
+        background-color: $purple-med;
+        border: 2px solid $purple-med;
 
         &:hover, &:focus, &:focus-visible, &:active {
             color: $dark;
@@ -155,12 +155,12 @@
         }
 
         &:hover {
-            border: 3px solid $purple !important;
+            border: 3px solid $purple-med !important;
         }
 
         @include media-breakpoint-up(lg) {
             &:hover {
-                background: $purple;
+                background: $purple-med;
                 transition-duration: 0.3s;
     
                 svg {
