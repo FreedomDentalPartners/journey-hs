@@ -2,8 +2,7 @@
   {
     "name": "lead",
     "label": "Lead",
-    "type": "text",
-    "display": "textarea"
+    "type": "richtext"
   },
   {
     "name": "header",
