@@ -5,7 +5,7 @@
     color: $white;
 }
 
-.hbspt-form, .hs-form {
+.hbspt-form, .hs-form, .hs-form-private {
     background: $dark;
     color: $white;
     padding-top: 2rem;
@@ -134,6 +134,12 @@
             font-size: 1.375rem;
         }
     }
+
+    .hs-field-desc {
+        @include outfit-500;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
     
     .hs-error-msgs {
         padding-left: 1rem;
@@ -145,12 +151,14 @@
         }
     }
     
-    // .submitted-message {
-    //     font-size: 1.25rem;
-    //     @include outfit-700;
-    //     color: $white;
-    //     text-align: center;
-    // }
+    .submitted-message {
+        @include outfit-600;
+        font-size: 1.25rem;
+        color: $white;
+        text-align: center;
+        margin: 1.5rem auto 4rem;
+        padding: 0 1rem;
+    }
     
     .hs-button {
         width: fit-content;
@@ -180,9 +188,6 @@
     .hs-submit .actions {
         margin: 0 auto;
         display: flex;
-        // @include media-breakpoint-up(md) {
-        //     margin: 2rem auto 0;
-        // }
     }
 
     .form-columns-1 {
@@ -225,9 +230,9 @@
 
 .submitted-message {
     @include outfit-600;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: $white;
     text-align: center;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 4rem;
     padding: 0 1rem;
 }
