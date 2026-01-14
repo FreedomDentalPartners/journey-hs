@@ -15360,14 +15360,10 @@ body {
   }
 }
 
-.banner-simple-sec .banner-simple--header.align-left {
-  margin-left: 0;
-}
-
 .banner-simple-sec .banner-simple--subheader {
   color: #fff;
   max-width: 55ch;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.4;

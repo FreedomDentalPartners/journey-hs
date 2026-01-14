@@ -25,19 +25,6 @@
     "display": "textarea"
   },
   {
-    "name": "align_text",
-    "label": "Align Text",
-    "type": "choice",
-    "display": "select",
-    "choices": [
-      [ "center", "Center" ],
-      [ "left", "Left" ]
-    ],
-    "default": "center",
-    "required": true,
-    "multiple": false
-  },
-  {
     "name": "subheader",
     "label": "Subheader",
     "type": "text",

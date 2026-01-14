@@ -5,8 +5,8 @@
                 {% if module.lead %}
                     <h4 class="banner-simple--lead mb-4">{{ module.lead }}</h4>
                 {% endif %}
-                <h2 class="banner-simple--header {% if module.align_text == 'left' %}align-left{% endif %}">{{ module.header }}</h2>
-                <h3 class="banner-simple--subheader">{{ module.subheader }}</h3>
+                <h2 class="banner-simple--header {% if module.align_left %} ms-0 {% endif %}">{{ module.header }}</h2>
+                <h3 class="banner-simple--subheader {% if module.align_left %} ms-0 {% endif %} ">{{ module.subheader }}</h3>
                 {% if module.body_text|striptags|trim|length > 0 %}
                     <div class="banner-simple--body_text">{{ module.body_text }}</div>
                 {% endif %}

@@ -84,16 +84,12 @@
             @include media-breakpoint-up(xl) {
                 max-width: 26ch;
             }
-
-            &.align-left {
-                margin-left: 0;
-            }
         }
 
         &--subheader {
             color: $white;
             max-width: 55ch;
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem;
             font-weight: 600;
             font-size: 1.5rem;
             line-height: 1.4;
