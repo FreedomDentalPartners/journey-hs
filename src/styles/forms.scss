@@ -145,12 +145,12 @@
         }
     }
     
-    .submitted-message {
-        font-size: 1.25rem;
-        @include outfit-700;
-        color: $white;
-        text-align: center;
-    }
+    // .submitted-message {
+    //     font-size: 1.25rem;
+    //     @include outfit-700;
+    //     color: $white;
+    //     text-align: center;
+    // }
     
     .hs-button {
         width: fit-content;
@@ -221,4 +221,13 @@
             }
         }
     }
+}
+
+.submitted-message {
+    @include outfit-600;
+    font-size: 1.125rem;
+    color: $white;
+    text-align: center;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
 }
