@@ -15002,7 +15002,7 @@ body {
   }
 }
 
-.hero-basic-sec .hero-basic .image-wrap {
+.hero-basic-sec .hero-basic .image-wrap, .hero-basic-sec .hero-basic .video-wrap {
   flex-direction: column;
   grid-row: 4 / 6;
   padding-left: 0;
@@ -15011,29 +15011,36 @@ body {
 }
 
 @media (width >= 768px) {
-  .hero-basic-sec .hero-basic .image-wrap {
+  .hero-basic-sec .hero-basic .image-wrap, .hero-basic-sec .hero-basic .video-wrap {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 @media (width >= 992px) {
-  .hero-basic-sec .hero-basic .image-wrap {
+  .hero-basic-sec .hero-basic .image-wrap, .hero-basic-sec .hero-basic .video-wrap {
     align-items: center;
     margin: 0 auto;
   }
 }
 
 @media (width >= 1200px) {
-  .hero-basic-sec .hero-basic .image-wrap {
+  .hero-basic-sec .hero-basic .image-wrap, .hero-basic-sec .hero-basic .video-wrap {
     max-width: 85%;
   }
 }
 
 @media (width >= 1400px) {
-  .hero-basic-sec .hero-basic .image-wrap {
+  .hero-basic-sec .hero-basic .image-wrap, .hero-basic-sec .hero-basic .video-wrap {
     max-width: 75%;
   }
+}
+
+.hero-basic-sec .hero-basic .video-wrap {
+  border: 2px solid #fff;
+  max-width: 700px;
+  margin-top: .5rem;
+  box-shadow: 0 0 25px 5px #050422;
 }
 
 .hero-basic-sec .hero-basic .button-wrap {
@@ -15172,7 +15179,7 @@ body {
   color: #a9a7ff;
 }
 
-.hero-basic-sec .hero-basic--image {
+.hero-basic-sec .hero-basic--image, .hero-basic-sec .hero-basic--video {
   object-fit: contain;
   border: 1px solid #fff;
   width: 80%;
@@ -15180,7 +15187,7 @@ body {
 }
 
 @media (width >= 768px) {
-  .hero-basic-sec .hero-basic--image {
+  .hero-basic-sec .hero-basic--image, .hero-basic-sec .hero-basic--video {
     width: 100%;
     max-width: 350px;
   }
@@ -15307,7 +15314,7 @@ body {
 .banner-simple-sec .banner-simple--header {
   color: #a9a7ff;
   max-width: 16ch;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   padding: 0;
 }
 
@@ -15315,6 +15322,10 @@ body {
   .banner-simple-sec .banner-simple--header {
     max-width: 26ch;
   }
+}
+
+.banner-simple-sec .banner-simple--header.align-left {
+  margin-left: 0;
 }
 
 .banner-simple-sec .banner-simple--subheader {

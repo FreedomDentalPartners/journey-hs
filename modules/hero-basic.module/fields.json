@@ -32,6 +32,25 @@
     "display": "textarea"
   },
   {
+    "name": "video",
+    "label": "Video Upload",
+    "type": "file",
+    "required": false,
+    "locked": false,
+    "file_types": [
+      "mp4",
+      "mov",
+      "webm"
+    ],
+    "default": null
+  },
+  {
+    "name": "video_thumbnail",
+    "label": "Video Thumbnail",
+    "type": "image",
+    "required": false
+  },
+  {
     "name": "link_text_1",
     "label": "Link 1 Text",
     "type": "text"

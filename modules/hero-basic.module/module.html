@@ -3,7 +3,7 @@
         <div class="row content-wrap">
             <div class="text-wrap px-0">
                 {% if module.lead %}
-                    <h4 class="hero-basic--lead mb-4 pb-3">{{ module.lead }}</h4>
+                    <h4 class="hero-basic--lead mb-4 pb-2 pb-lg-3">{{ module.lead }}</h4>
                 {% endif %}
                 <h1 class="hero-basic--header">{{ module.header }}</h1>
                 {% if module.subheader %}
@@ -23,6 +23,18 @@
                     <p class="hero-basic--caption">{{ module.caption }}</p>
                 </div>
             {% endif%}
+
+            {% if module.video %}
+                <div class="video-wrap">
+                    <video
+                        controls
+                        poster="{{ module.video_thumbnail.src }}"
+                        preload="metadata"
+                        style="max-width: 100%; height: auto;">
+                        <source src="{{ module.video }}" type="video/mp4">
+                    </video>
+                </div>
+            {% endif %}
 
             {% if module.link_text_1 %}
             <div class="button-wrap mt-3">

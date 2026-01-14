@@ -77,12 +77,16 @@
 
         &--header {
             color: $white;
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem;
             padding: 0;
             max-width: 16ch;
             color: $purple-light;
             @include media-breakpoint-up(xl) {
                 max-width: 26ch;
+            }
+
+            &.align-left {
+                margin-left: 0;
             }
         }
 
