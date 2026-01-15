@@ -58,7 +58,7 @@
   {
     "name": "link_url_1",
     "label": "Link 1 URL",
-    "type": "url"
+    "type": "link"
   },
   {
     "name": "link_text_2",
@@ -68,7 +68,7 @@
   {
     "name": "link_url_2",
     "label": "Link 2 URL",
-    "type": "url"
+    "type": "link"
   },
   {
     "name": "anchor_link",

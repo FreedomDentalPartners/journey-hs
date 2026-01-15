@@ -37,13 +37,22 @@
             {% endif %}
 
             {% if module.link_text_1 %}
-            <div class="button-wrap mt-3">
+            <div class="button-wrap mt-5 mt-lg-4">
                 {% if module.link_text_1 %}
-                   <a href="{{ module.link_url_1 }}" class="btn btn-primary mt-4 mt-lg-5 mx-lg-3">{{ module.link_text_1 }}</a>
+                <a href="{{ module.link_url_1.url.href }}"
+                    {% if module.link_url_1.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if module.link_url_1.rel %}rel="{{ module.link_url_1.rel }}"{% endif %} 
+                    class="btn btn-primary mt-4 mt-lg-5 mx-md-3">
+                    {{ module.link_text_1 }}
+                </a>
                 {% endif %}
                 {% if module.link_text_2 %}
-                   <a href="{{ module.link_url_2 }}" class="btn btn-secondary mt-4 mt-lg-5 mx-lg-3">{{ module.link_text_2 }}</a>
+                   <a href="{{ module.link_url_2.url.href }}"
+                    {% if module.link_url_2.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if module.link_url_2.rel %}rel="{{ module.link_url_2.rel }}"{% endif %} class="btn btn-secondary mt-4 mt-lg-5 mx-md-3">
+                    {{ module.link_text_2 }}
                 {% endif %}
+                </a>
             </div>
             {% endif %}
 
