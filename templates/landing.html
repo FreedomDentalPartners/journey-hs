@@ -17,6 +17,8 @@
     {{ standard_header_includes }}
   </head>
   <body>
+    {% include "../templates/partials/header-basic.html" %}
+
     {% dnd_area "main" label="Main content" locked=false %}
     {% end_dnd_area %}
     {{ standard_footer_includes }}

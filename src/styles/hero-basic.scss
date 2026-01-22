@@ -1,19 +1,20 @@
 .hero-basic-sec {
     .hero-basic {
-        min-height: 100vh;
-        padding-top: 15%;
+        min-height: calc(100vh - 103px);
+        padding-top: 10%;
         padding-bottom: 15%;
         position: relative;
         align-items: center;
         display: flex;
         @include media-breakpoint-up(md) {
+            min-height: calc(100vh - 133px);
             padding-top: 15%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         @include media-breakpoint-up(lg) {
-            padding-top: 4rem;
+            padding-top: 0;
             padding-bottom: 4rem;
         }
         
