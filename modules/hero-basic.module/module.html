@@ -25,16 +25,38 @@
             {% endif%}
 
             {% if module.video %}
-                <div class="video-wrap">
-                    <video
-                        controls
-                        poster="{{ module.video_thumbnail.src }}"
-                        preload="metadata"
-                        style="max-width: 100%; height: auto;">
-                        <source src="{{ module.video }}" type="video/mp4">
-                    </video>
+                <div class="video-container">
+                    <div class="video-wrap mb-4 mb-lg-0">
+                        <h4 class="video-title">{{ module.video_title }}</h4>
+                        <div class="video-box">
+                            <video
+                                controls
+                                poster="{{ module.video_thumbnail.src }}"
+                                preload="metadata"
+                                style="max-width: 100%; height: 100%;">
+                                <source src="{{ module.video }}" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    {% if module.video_2 %}
+                    <div class="video-wrap mt-5 mt-lg-0">
+                        <h4 class="video-title">{{ module.video_title_2 }}</h4>
+                        <div class="video-box">
+                            <video
+                                controls
+                                poster="{{ module.video_thumbnail_2.src }}"
+                                preload="metadata"
+                                style="max-width: 100%; height: 100%;">
+                                <source src="{{ module.video_2 }}" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    {% endif %}
+
                 </div>
             {% endif %}
+            
 
             {% if module.link_text_1 %}
             <div class="button-wrap mt-5 mt-lg-4">

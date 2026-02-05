@@ -28,6 +28,7 @@
         .text-wrap {
             grid-row: 2/3;
             max-width: 335px;
+            margin: 0 auto;
             @include media-breakpoint-up(sm) {
                 max-width: 540px;
             }
@@ -61,11 +62,61 @@
             }
         }
 
+        .video-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            grid-row: 4/6;
+            margin-top: 1.5rem;
+            @include media-breakpoint-up(lg) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
         .video-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include media-breakpoint-up(md) {
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 50%;
+            }
+        }
+
+        .video-box {
             max-width: 700px;
-            border: 2px solid $white;
-            margin-top: 0.5rem;
+            border: 1px solid $white;
             box-shadow: 0px 0px 25px 5px #050422;
+            grid-row: inherit;
+            @include media-breakpoint-up(md) {
+                width: 92.5%;
+                height: 250px;
+            }
+
+            video {
+                // object-fit: cover;
+                width: 100%;
+                // height: 100% !important;
+                // max-height: 250px;
+                // @include media-breakpoint-up(md) {
+                //     max-height: 350px;
+                //     height: 350px;
+                // }
+            }
+        }
+
+        .video-title {
+            color: $white;
+            text-align: center;
+            margin-bottom: 1.5rem;
         }
 
         .button-wrap {
