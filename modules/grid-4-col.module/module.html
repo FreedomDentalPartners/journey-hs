@@ -35,9 +35,20 @@
                 {% endfor %}
             </div>
 
+            <div class="button-wrap">
             {% if module.caption %}
                 <h4 class="h5 grid-4-col__caption">{{ module.caption }}</h4>
             {% endif %}
+            
+            {% if module.link_text %}
+                <a href="{{ module.link_url.url.href }}"
+                    {% if module.link_url.open_in_new_tab %}target="_blank"{% endif %}
+                    {% if module.link_url.rel %}rel="{{ module.link_url.rel }}"{% endif %} 
+                    class="btn btn-primary grid-4-col__btn">
+                    {{ module.link_text }}
+                </a>
+            {% endif %}
+            </div>
         </div>
     </div>
 </section>

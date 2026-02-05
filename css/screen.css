@@ -14965,13 +14965,19 @@ body {
   }
 }
 
+.grid-4-col-sec .grid-4-col .button-wrap {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
 .grid-4-col-sec .grid-4-col__btn {
-  margin: 4rem auto 0;
+  margin: 3rem auto 1.5rem;
 }
 
 @media (width >= 992px) {
   .grid-4-col-sec .grid-4-col__btn {
-    margin: 6rem auto 0;
+    margin: 3.5rem auto 0;
   }
 
   .grid-4-col-sec .grid-4-col.wrap-blocks {
